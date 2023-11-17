@@ -1,0 +1,128 @@
+.mainContainer{
+  width: 86%;
+  height: auto;
+  margin: 0 7%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.categoryLeftPart h6{
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+.categoryLeftPart h4{
+  color: #003459;
+  font-weight: 700;
+}
+
+.categoryRightPart{
+  padding-top: 60px;
+  display: flex;
+  gap: 40px;
+}
+
+.categoryRightPart button{
+  width: 74px;
+  height: 36px;
+  border: 1.5px solid #003459;
+  border-radius:20px;
+  border-style: solid;
+  color: #003459;
+  font-weight: 500;
+  background-color: white;
+}
+
+.categoryRightPart button:hover{
+  color: white;
+  background-color: #003459;
+}
+
+.cardContainer{
+  width: 86%;
+  height: auto;
+  margin: 2% 7%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 60px;
+}
+
+.card{
+  width: 244px;
+  height: 340px;
+  background-color:white;
+  border-radius: 8px;
+  border: 2px solid  #F6F6F6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+  width: 238px;
+  height: 238px;
+  padding-left: 3px;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+
+.card h6{
+  font-weight: 700;
+  margin-left: 3px;
+  margin-top: 14px;
+  margin-bottom: 0px;
+}
+.card  span{
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 3px;
+  color: rgb(104, 104, 104);
+}
+
+@media only screen and (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .mainContainer {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 2.5%;
+  }
+
+  .categoryLeftPart h6 {
+    padding-top: 20px;
+  }
+
+  .categoryRightPart {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .cardContainer{
+    width: 95%;
+    height: auto;
+    margin: 0 2.5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap:10px
+  }
+
+  .card{
+    width: 178px;
+    height: 300px;
+  }
+  
+  .card img{
+    width: 178px;
+    height: 180px;
+    padding-top: 5px;
+    padding-right: 5px;
+  }
+
+}
+

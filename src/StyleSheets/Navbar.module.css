@@ -1,0 +1,45 @@
+.navMainContainer{
+  width: 100%;
+  height: 80px;
+  background-color: #FCEED5;
+}
+
+
+.navBar{
+  width: 86%;
+  height: 80px;
+  margin: 0 7%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBarLogo{
+  width: 100px;
+}
+
+.navBarPart2{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.navBarPart2 h6{
+  color: #003459;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.hamburgerLogo{
+  width: 50px;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navBarPart2 h6{
+    display: none;
+  }
+
+  .hamburgerLogo{
+    display: block;
+  }
+}
